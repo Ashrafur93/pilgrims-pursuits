@@ -1,10 +1,10 @@
-# {Pilgrim's Pursuits}
+# Pilgrim's Pursuits
 
 [Pilgrim's Pursuits responsive screenshot from www.amiresponsive.com]("insert responsive screenshot")
 
 ## Introduction
 
-Pilgrim's Pursuits is a blog dedicated to providing comprehensive information about the Islamic pilgrimage, Hajj. It aims to address the challenges of learning about and booking Hajj packages, offering users the ability to read and write information to broaden their perspectives and simplify their decision-making process. This website is developed as part of my Individual Capstone Project for the AI Augmented Full Stack Web Developer course by Code Institute, with a focus on Django, database management, and CRUD functionality.
+Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive information about the Islamic pilgrimage, Hajj. It aims to address the challenges of learning about and booking Hajj packages, offering users the ability to read and write information to broaden their perspectives and simplify their decision-making process. This website is developed as part of my Individual Capstone Project for the AI Augmented Full Stack Web Developer course by Code Institute, with a focus on Django, database management, and CRUD functionality.
 
 [View the live site here]("insert deployed link")
 
@@ -13,6 +13,9 @@ Pilgrim's Pursuits is a blog dedicated to providing comprehensive information ab
 ## Table of Contents
 
 - [User Stories](#user-stories)
+- [UX Design Process](#ux-design-process)
+  - [Project Board](GitHub-Projects)
+  - [Wireframes](Wireframes)
 
 ## User Stories
 
@@ -25,14 +28,119 @@ Pilgrim's Pursuits is a blog dedicated to providing comprehensive information ab
 7. As a Registered User, I want to give a star rating on blog posts so that I can express my opinion on the quality of the content.
 8. As a Registered User, I want to create blog posts so that I can share my experiences and knowledge.
 9. As a Registered User, I want to like blog posts and comments so that I can show my appreciation for the content.
+10. As a Registered User, I want to collaborate with the blog author by sending my ideas and comments, so that I can provide ideas and feedback.
 
 ## UX Design Process
 
 - **Link to User Stories in GitHub Projects:**
+
   - [GitHub Projects Kanban Board](https://github.com/users/Ashrafur93/projects/6)
+
 - **Wireframes:**
-  - [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
-  - [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
+
+  I used Balsamiq to create the wireframes and used the Code Institute Walkthrough Project as the template for my layout. [Balsamiq](https://balsamiq.com/) was introduced to me via the Code Institute course and I have found it to be easy to learn and use. It is great for designing websites on different platforms and viewports, which helps to plan for responsive sites.
+
+**Mobile view for:**
+
+- Home
+- About
+- Register
+- Login
+- Article
+
+<details open>
+    <summary>Mobile Home Page Wireframe</summary>  
+    <img src="">  
+</details>
+  
+<details>
+    <summary>Mobile About Page Wireframe</summary>  
+    <img src="">
+</details>
+
+<details>
+    <summary>Mobile Register Page Wireframe</summary>  
+    <img src="">
+</details>
+
+<details>
+    <summary>Mobile Login Page Wireframe</summary>  
+    <img src="">
+</details>
+
+<details>
+    <summary>Mobile Article Page Wireframe</summary>  
+    <img src="">
+</details>
+
+**Tablet view for:**
+
+- Home
+- About
+- Register
+- Login
+- Article
+
+<details open>
+    <summary>Tablet Home Page Wireframe</summary>  
+    <img src="">  
+</details>
+  
+<details>
+    <summary>Tablet About Page Wireframe</summary>  
+    <img src="">
+</details>
+
+<details>
+    <summary>Tablet Register Page Wireframe</summary>  
+    <img src="">
+</details>
+
+<details>
+    <summary>Tablet Login Page Wireframe</summary>  
+    <img src="">
+</details>
+
+<details>
+    <summary>Tablet Article Page Wireframe</summary>  
+    <img src="">
+</details>
+
+**Desktop view for:**
+
+- Home
+- About
+- Register
+- Login
+- Article
+
+<details open>
+    <summary>Desktop Home Page Wireframe</summary>  
+    <img src="/static/images/Desktop - Home.PNG">  
+</details>
+  
+<details>
+    <summary>Desktop About Page Wireframe</summary>  
+    <img src="/static/images/Desktop - About.PNG">
+</details>
+
+<details>
+    <summary>Desktop Register Page Wireframe</summary>  
+    <img src="/static/images/Desktop - Sign up.PNG">
+</details>
+
+<details>
+    <summary>Desktop Login Page Wireframe</summary>  
+    <img src="/static/images/Desktop - Sign in.PNG">
+</details>
+
+<details>
+    <summary>Desktop Article Page Wireframe</summary>  
+    <img src="/static/images/Desktop - Article.PNG">
+</details>
+
+- [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
+- [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
 - **Design Rationale:**
   - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
   - [Highlight any considerations made for users with disabilities, such as screen reader support.]
