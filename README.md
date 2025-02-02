@@ -157,7 +157,7 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
 
 ## Deployment
 
-- **Platform:** [Platform used, e.g., Heroku, AWS, etc.]
+- **Platform:** [Heroku](https://www.heroku.com)
 - **High-Level Deployment Steps:**
   1. [Step 1]
   2. [Step 2]
