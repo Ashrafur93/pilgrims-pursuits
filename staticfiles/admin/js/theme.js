@@ -16,7 +16,6 @@
             const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
             if (prefersDark) {
-                // Auto (dark) -> Light -> Dark
                 if (currentTheme === "auto") {
                     setTheme("light");
                 } else if (currentTheme === "light") {
@@ -25,7 +24,6 @@
                     setTheme("auto");
                 }
             } else {
-                // Auto (light) -> Dark -> Light
                 if (currentTheme === "auto") {
                     setTheme("dark");
                 } else if (currentTheme === "dark") {

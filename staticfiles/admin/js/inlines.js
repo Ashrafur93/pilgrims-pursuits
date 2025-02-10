@@ -41,19 +41,13 @@
         const minForms = $("#id_" + options.prefix + "-MIN_NUM_FORMS").prop("autocomplete", "off");
         let addButton;
 
-        /**
-         * The "Add another MyModel" button below the inline forms.
-         */
         const addInlineAddButton = function() {
             if (addButton === null) {
                 if ($this.prop("tagName") === "TR") {
-                    // If forms are laid out as table rows, insert the
-                    // "add" button in a new table row:
                     const numCols = $this.eq(-1).children().length;
                     $parent.append('<tr class="' + options.addCssClass + '"><td colspan="' + numCols + '"><a href="#">' + options.addText + "</a></tr>");
                     addButton = $parent.find("tr:last a");
                 } else {
-                    // Otherwise, insert it immediately after the last form:
                     $this.filter(":last").after('<div class="' + options.addCssClass + '"><a href="#">' + options.addText + "</a></div>");
                     addButton = $this.filter(":last").next().find("a");
                 }
@@ -96,22 +90,12 @@
             }));
         };
 
-        /**
-         * The "X" button that is part of every unsaved inline.
-         * (When saved, it is replaced with a "Delete" checkbox.)
-         */
         const addInlineDeleteButton = function(row) {
             if (row.is("tr")) {
-                // If the forms are laid out in table rows, insert
-                // the remove button into the last table cell:
                 row.children(":last").append('<div><a class="' + options.deleteCssClass + '" href="#">' + options.deleteText + "</a></div>");
             } else if (row.is("ul") || row.is("ol")) {
-                // If they're laid out as an ordered/unordered list,
-                // insert an <li> after the last list item:
                 row.append('<li><a class="' + options.deleteCssClass + '" href="#">' + options.deleteText + "</a></li>");
             } else {
-                // Otherwise, just insert the remove button as the
-                // last child element of the form's container:
                 row.children(":first").append('<span><a class="' + options.deleteCssClass + '" href="#">' + options.deleteText + "</a></span>");
             }
             // Add delete handler for each row.
@@ -123,8 +107,6 @@
             const deleteButton = $(e1.target);
             const row = deleteButton.closest('.' + options.formCssClass);
             const inlineGroup = row.closest('.inline-group');
-            // Remove the parent form containing this button,
-            // and also remove the relevant row with non-field errors:
             const prevRow = row.prev();
             if (prevRow.length && prevRow.hasClass('row-form-errors')) {
                 prevRow.remove();
@@ -147,10 +129,7 @@
             if ((maxForms.val() === '') || (maxForms.val() - forms.length) > 0) {
                 addButton.parent().show();
             }
-            // Hide the remove buttons if at min_num.
             toggleDeleteButtonVisibility(inlineGroup);
-            // Also, update names and ids for all remaining form controls so
-            // they remain in sequence:
             let i, formCount;
             const updateElementCallback = function() {
                 updateElementIndex(this, options.prefix, i);
@@ -210,12 +189,10 @@
     };
 
 
-    // Tabular inlines ---------------------------------------------------------
     $.fn.tabularFormset = function(selector, options) {
         const $rows = $(this);
 
         const reinitDateTimeShortCuts = function() {
-            // Reinitialize the calendar and clock widgets by force
             if (typeof DateTimeShortcuts !== "undefined") {
                 $(".datetimeshortcuts").remove();
                 DateTimeShortcuts.init();
@@ -223,8 +200,6 @@
         };
 
         const updateSelectFilter = function() {
-            // If any SelectFilter widgets are a part of the new form,
-            // instantiate a new SelectFilter instance for it.
             if (typeof SelectFilter !== 'undefined') {
                 $('.selectfilter').each(function(index, value) {
                     SelectFilter.init(value.id, this.dataset.fieldName, false);
@@ -268,7 +243,6 @@
         return $rows;
     };
 
-    // Stacked inlines ---------------------------------------------------------
     $.fn.stackedFormset = function(selector, options) {
         const $rows = $(this);
         const updateInlineLabel = function(row) {
@@ -279,7 +253,6 @@
         };
 
         const reinitDateTimeShortCuts = function() {
-            // Reinitialize the calendar and clock widgets by force, yuck.
             if (typeof DateTimeShortcuts !== "undefined") {
                 $(".datetimeshortcuts").remove();
                 DateTimeShortcuts.init();
@@ -287,7 +260,6 @@
         };
 
         const updateSelectFilter = function() {
-            // If any SelectFilter widgets were added, instantiate a new instance.
             if (typeof SelectFilter !== "undefined") {
                 $(".selectfilter").each(function(index, value) {
                     SelectFilter.init(value.id, this.dataset.fieldName, false);
@@ -305,9 +277,7 @@
                     dependency_list = input.data('dependency_list') || [],
                     dependencies = [];
                 $.each(dependency_list, function(i, field_name) {
-                    // Dependency in a fieldset.
                     let field_element = row.find('.form-row .field-' + field_name);
-                    // Dependency without a fieldset.
                     if (!field_element.length) {
                         field_element = row.find('.form-row.field-' + field_name);
                     }

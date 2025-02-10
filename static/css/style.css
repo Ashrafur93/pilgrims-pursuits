@@ -1,16 +1,16 @@
 body {
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF;
 }
 
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #000000; /* Black */
+    color: #000000;
 }
 
 .red-o {
-    color: #C0A16B; /* Darker beige */
+    color: #C0A16B;
 }
 
 .thin {
@@ -18,15 +18,15 @@ body {
 }
 
 .light-bg {
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF;
 }
 
 .dark-bg {
-    background-color: #000000; /* Black */
+    background-color: #000000;
 }
 
 .main-bg {
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF;
 }
 
 .card {
@@ -43,7 +43,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #C0A16B; /* Darker beige */
+    background-color: #C0A16B;
 }
 
 .scale {
@@ -52,7 +52,7 @@ body {
 }
 
 .author {
-    color: #FFFFFF; /* White */
+    color: #FFFFFF;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -67,8 +67,8 @@ body {
 }
 
 .masthead-text {
-    background-color: #000000; /* Black */
-    color: #FFFFFF; /* White */
+    background-color: #000000;
+    color: #FFFFFF;
     position: relative;
 }
 
@@ -84,7 +84,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #000000; /* Black */
+    background: #000000;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -93,12 +93,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #000000; /* Black */
+    color: #000000;
 }
 
 .post-link:hover,
 .page-link {
-    color: #C0A16B; /* Darker beige */
+    color: #C0A16B;
 }
 
 .post-title {
@@ -113,41 +113,41 @@ body {
 
 .btn-signup,
 .btn-edit {
-    background-color: #C0A16B; /* Darker beige */
-    color: #000000; /* Black */
+    background-color: #C0A16B;
+    color: #000000;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #FFFFFF; /* White */
-    color: #C0A16B; /* Darker beige */
+    background-color: #FFFFFF;
+    color: #C0A16B;
 }
 
 .link {
-    color: #C0A16B; /* Darker beige */
+    color: #C0A16B;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #000000; /* Black */
+    color: #000000;
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #C0A16B; /* Darker beige */
+    color: #C0A16B;
     border: none;
     background: transparent;
 }
 
 .btn-delete {
-    color: #FFFFFF; /* White */
-    background: #C0A16B; /* Darker beige */
+    color: #FFFFFF;
+    background: #C0A16B;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #C0A16B; /* Darker beige */
+    color: #C0A16B;
     background: transparent;
     border: none;
 }

@@ -152,7 +152,6 @@
             s = downcode(s);
         }
         s = s.toLowerCase(); // convert to lowercase
-        // if downcode doesn't hit, the char will be stripped here
         if (allowUnicode) {
             // Keep Unicode letters including both lowercase and uppercase
             // characters, whitespace, and dash; remove other characters.

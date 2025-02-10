@@ -3,13 +3,7 @@ from django.contrib import messages
 from .models import About
 from .forms import CollaborateForm
 
-# Create your views here.
-
 def about(request):
-    """
-    Renders the About page
-    """
-
     about = About.objects.all().order_by('-updated_on').first()
     if request.method == "POST":
         collaborate_form = CollaborateForm(data=request.POST)
