@@ -28,18 +28,21 @@ def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-created_on")
-    comment_count = post.comments.filter(approved=True).count()
+    comment_count = post.comments.count()
     if request.method == "POST":
+        print("Received a POST request")
         comment_form = CommentForm(data=request.POST)
+        print("About to render template")
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
             comment.author = request.user
             comment.post = post
+            comment.approved = True  # Automatically approve the comment
             comment.save()
             messages.add_message(
-            request, messages.SUCCESS,
-            'Comment submitted and awaiting approval'
-            )    
+                request, messages.SUCCESS,
+                'Comment submitted successfully'
+            )
 
     comment_form = CommentForm()
 
