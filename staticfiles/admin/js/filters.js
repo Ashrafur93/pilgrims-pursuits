@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 'use strict';
 {
     let filters = JSON.parse(sessionStorage.getItem('django.admin.filtersState'));

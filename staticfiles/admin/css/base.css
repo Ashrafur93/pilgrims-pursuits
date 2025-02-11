@@ -37,8 +37,8 @@ html[data-theme="light"],
     --message-warning-bg: #ffc;
     --message-error-bg: #ffefef;
 
-    --darkened-bg: #f8f8f8; /* A bit darker than --body-bg */
-    --selected-bg: #e4e4e4; /* E.g. selected table cells */
+    --darkened-bg: #f8f8f8;
+    --selected-bg: #e4e4e4;
     --selected-row: #ffc;
 
     --button-fg: #fff;
@@ -505,7 +505,6 @@ select {
 }
 
 select[multiple] {
-    /* Allow HTML size attribute to override the height in the rule above. */
     height: auto;
     min-height: 150px;
 }
@@ -738,11 +737,11 @@ div.breadcrumbs a:focus, div.breadcrumbs a:hover {
 }
 
 a.deletelink:link, a.deletelink:visited {
-    color: #CC3434; /* XXX Probably unused? */
+    color: #CC3434;
 }
 
 a.deletelink:focus, a.deletelink:hover {
-    color: #993333; /* XXX Probably unused? */
+    color: #993333;
     text-decoration: none;
 }
 

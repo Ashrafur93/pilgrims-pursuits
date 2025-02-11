@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 'use strict';
 {
     window.addEventListener('load', function(e) {

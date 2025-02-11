@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /*global URLify*/
 'use strict';
 {

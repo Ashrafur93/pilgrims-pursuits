@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /*global gettext, interpolate, ngettext*/
 'use strict';
 {

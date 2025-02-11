@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /*global DateTimeShortcuts, SelectFilter*/
 /**
  * Django admin inlines
