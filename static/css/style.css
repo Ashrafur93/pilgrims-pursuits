@@ -159,3 +159,19 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+.custom-navbar { 
+    background-color: #C0A16B; 
+}
+
+.custom-navbar .nav-link {
+    color: black;
+}
+
+.custom-navbar .navbar-brand {
+    color: black;
+}
+
+.custom-navbar .navbar-text {
+    color: black;
+}
