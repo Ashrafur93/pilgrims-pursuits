@@ -209,10 +209,37 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
   - **Devices and Browsers Tested:** Windows 11 (Chrome, Edge - Samsung RF511), Android (Chrome - Samsung Galaxy Note 10+, Samsung browser - Samsung Galaxy S20 FE), iOS (Safari - iPhone 14).
   - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
   - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
-- **Automated Testing:**
+- **Automated Testing**
   - Tools Used: [Mention any testing frameworks or tools, e.g., Django TestCase.]
   - Features Covered: [Briefly list features covered by automated tests.]
   - Adjustments Made: [Describe any manual corrections to AI-generated test cases, particularly for accessibility.]
+- **Lighthouse testing**
+<details>
+    <summary>Lighthouse testing screenshot</summary>  
+    <img src="/documentation/images/Lighthouse.PNG">
+</details>
+  - Unfortunately testing shows errors on Lighthouse, despite full functionality of the blogsite. This will be addressed for future releases.
+
+- **HTML validator**
+<details>
+    <summary>HTML validator - About</summary>  
+    <img src="/documentation/images/HTML validator - About.PNG">
+</details>
+  - Unfortunately testing shows errors on W3C HTML validator, despite full functionality of the blogsite. This will be addressed for future releases.
+
+<details>
+    <summary>HTML validator - Base</summary>  
+    <img src="/documentation/images/HTML validator - Base.PNG">
+</details>
+  - Unfortunately testing shows errors on W3C HTML validator, despite full functionality of the blogsite. This will be addressed for future releases.
+
+  <details>
+    <summary>HTML validator - Index</summary>  
+    <img src="/documentation/images/HTML validator - Index 1.PNG">
+    <img src="/documentation/images/HTML validator - Index 2.PNG">    
+</details>
+  - Unfortunately testing shows errors on W3C HTML validator, despite full functionality of the blogsite. This will be addressed for future releases.
+
 
 ## Future Enhancements
 
