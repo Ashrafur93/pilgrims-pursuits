@@ -1,12 +1,12 @@
 # Pilgrim's Pursuits
 
-[Pilgrim's Pursuits responsive screenshot from www.amiresponsive.com]("insert responsive screenshot")
+![Pilgrim's Pursuits responsive screenshot](/documentation/images/amiresponsive.PNG)
 
 ## Introduction
 
 Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive information about the Islamic pilgrimage, Hajj. It aims to address the challenges of learning about and booking Hajj packages, offering users the ability to read and write information to broaden their perspectives and simplify their decision-making process. This website is developed as part of my Individual Capstone Project for the AI Augmented Full Stack Web Developer course by Code Institute, with a focus on Django, database management, and CRUD functionality.
 
-[View the live site here]("insert deployed link")
+[View the live site here](https://pilgrims-pursuits-6f2112d13927.herokuapp.com/)
 
 <hr>
 
@@ -18,6 +18,8 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
   - [Wireframes](Wireframes)
 
 ## User Stories
+
+- The user stories were created by [Microsoft Copilot](https://copilot.microsoft.com/) using the pattern of "As a ** I want to ** so that I can **", alongside further commands to Copilot to refine them, including editing some user stories entirely.
 
 1. As a Visitor, I want to register an account so that I can access the blog site features.
 2. As a Registered User, I want to log in so that I can access my account and post comments.
@@ -69,7 +71,7 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
 </details>
 
 <details>
-    <summary>Mobile Article Page Wireframe</summary>  
+    <summary>Mobile Post Page Wireframe</summary>  
     <img src="">
 </details>
 
@@ -102,7 +104,7 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
 </details>
 
 <details>
-    <summary>Tablet Article Page Wireframe</summary>  
+    <summary>Tablet Post Page Wireframe</summary>  
     <img src="">
 </details>
 
@@ -116,58 +118,68 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
 
 <details open>
     <summary>Desktop Home Page Wireframe</summary>  
-    <img src="/static/images/Desktop - Home.PNG">  
+    <img src="/documentation/images/Desktop - Home.PNG">  
 </details>
   
 <details>
     <summary>Desktop About Page Wireframe</summary>  
-    <img src="/static/images/Desktop - About.PNG">
+    <img src="/documentation/images/Desktop - About.PNG">
 </details>
 
 <details>
     <summary>Desktop Register Page Wireframe</summary>  
-    <img src="/static/images/Desktop - Sign up.PNG">
+    <img src="/documentation/images/Desktop - Sign up.PNG">
 </details>
 
 <details>
     <summary>Desktop Login Page Wireframe</summary>  
-    <img src="/static/images/Desktop - Sign in.PNG">
+    <img src="/documentation/images/Desktop - Sign in.PNG">
 </details>
 
 <details>
-    <summary>Desktop Article Page Wireframe</summary>  
-    <img src="/static/images/Desktop - Article.PNG">
+    <summary>Desktop Post Page Wireframe</summary>  
+    <img src="/documentation/images/Desktop - Post.PNG">
 </details>
 
-- [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
-- [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
+- I used wireframes to create the rudimentary design and layout of the blogsite, it was mainly inspired by the minimalistic and clear design of the Walkthrough project. Images provide a visual indication of the post content and alternative text supports accessibility.
+
 - **Design Rationale:**
-  - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
-  - [Highlight any considerations made for users with disabilities, such as screen reader support.]
+  - The design is a clear and simple layout with minimal distractions for the user, it is intentionally designed to have the blog posts at the user's attention.
+
+- **Colour scheme:**
+
+  - <details>
+    <summary>Colour palette</summary>  
+    <img src="/documentation/images/Coolers.png">
+    </details>
+
+  - The colour scheme was also kept minimal for a clean look with only 3 colours used for the website, which were derived from [Coolers.co](https://coolors.co/). It was inspired by the black and gold colouring of the Kaba in Makkah, as well as the official website for [Nusuk Hajj](https://hajj.nusuk.sa/).
+  The typography is the default font of the Django package, which is installed during pip installation of the Django framework. The colour choices of the font also reflect minimal styling and contrast to make readability easier. 
+
 - **Reasoning For Any Final Changes:**
-  - [Summarise significant changes made to the design during development and the reasons behind them.]
-  - [Reflect on how these changes enhance inclusivity and accessibility.]
+  - Some changes were made from the initial concept to the current result. Due to user feedback, the navbar was given it's own colour to separate it from the rest of the page, this provides better UX as the user's eyes flow down the content easier. And due to time constraints, images were not included as thumbnails for the posts, this can be introduced in a later release.
 
 ## Key Features
 
-- **Feature 1:** [Briefly describe the implemented feature.]
-- **Feature 2:** [Briefly describe the implemented feature.]
+- **CRUD functionality:** This is one of the defining purposes of this project and the user can successfully create, read, update and delete content. 
+- **User authentication:** Users can log in and out securely, while only the original user (and admins) can edit or delete their comment.
 - **Inclusivity Notes:**
-  - [Mention how the features address the needs of diverse users, including those with SEND.]
+  - ARIA labels have been used where required and the banner image has been given an alternate text.
 
 ## Deployment
 
 - **Platform:** [Heroku](https://www.heroku.com)
 - **High-Level Deployment Steps:**
-  1. [Step 1]
-  2. [Step 2]
-  3. [Step 3]
+  1. Clone the repository from Github.
+  2. Set up the Heroku environment and create a PostgreSQL database. I used [Code Institute's student link](https://dbs.ci-dbs.net/)
+  3. Configure the variables in Heroku for the database URL from the previous step as well as secret keys.
+  4. Deploy from Heroku and click open app.
 - **Verification and Validation:**
-  - Steps taken to verify the deployed version matches the development version in functionality.
-  - [Include any additional checks to ensure accessibility of the deployed application.]
+  - The deployed version was checked on each page to ensure it matches the development version in functionality and styling.
+  - Additional checks were made with lighthouse and manual testing.
 - **Security Measures:**
-  - Use of environment variables for sensitive data.
-  - Ensured DEBUG mode is disabled in production.
+  - The environmental variables store sensitive data.
+  - DEBUG mode is set to false to improve security.
 
 ## AI Implementation and Orchestration
 
@@ -194,7 +206,7 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
 ## Testing Summary
 
 - **Manual Testing:**
-  - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
+  - **Devices and Browsers Tested:** Windows 11 (Chrome, Edge - Samsung RF511), Android (Chrome - Samsung Galaxy Note 10+, Samsung browser - Samsung Galaxy S20 FE), iOS (Safari - iPhone 14).
   - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
   - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
 - **Automated Testing:**
@@ -206,3 +218,14 @@ Pilgrim's Pursuits is a blogsite dedicated to providing comprehensive informatio
 
 - [List potential improvements or additional features for future development.]
 - Consider enhancements to improve accessibility further, such as voice input capabilities or additional language support.
+
+## Credits
+- **Content**
+  - All the blog posts were written by Copilot with minimal intervention by me, this greatly sped up the build process.
+  - [Getty Images](https://www.gettyimages.co.uk/) was used to download the banner image in each post.
+  - Much of the code was derived from the Code Institute walkthrough project, with some changes made by myself as well as Copilot.
+  - This README file was provided to me by Code Institute as a template, which I then edited.
+  
+- **Acknowledgements**
+  - My deepest gratitude to the Code Institute team for this amazing course which has set me on the path to become a Web Developer.
+  - A special thank you and recognition to my Facilitator Emma Lamont, Coding Coaches Ruairidh MacArthur and John Rearden and Subject Matter Expert Spencer Barriball for all their patience, knowledge and support.
